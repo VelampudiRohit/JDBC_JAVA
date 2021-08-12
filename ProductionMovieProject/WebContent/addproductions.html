@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Add Productions</title>
+<style> 
+body {
+  background-color: lightgray;
+  opacity: 0.9;
+  font-family: Arial, Helvetica, sans-serif;
+}
+input[type=text] {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #555;
+  outline: none;
+}
+
+input[type=text]:focus {
+  background-color: lightblue;
+}
+
+input[type=number] {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #555;
+  outline: none;
+}
+
+input[type=number]:focus {
+  background-color: lightblue;
+}
+</style>
+</head>
+<body>
+<h1>Add Productions here</h1> <br>
+
+<form action="./AddProductionsController" method="post">
+
+Productions Id: <input type="number" name="pid"><br><br>
+
+Productions Name: <input type="text" name="pname"><br><br>
+
+Productions Address: <input type="text" name="address"><br><br>
+
+Productions Year: <input type="number" name="year"><br><br>
+
+Productions Owner: <input type="text" name="owner"><br><br>
+
+
+<input type="submit" value="Insert Productions"><br><br>
+
+</form>
+
+</body>
+</html>
